@@ -2,8 +2,9 @@ package httpserver
 
 import (
 	"fmt"
-	"go-api-template/pkg/metrics"
 	"net/http"
+
+	"github.com/adefirmanf/go-api-template/pkg/metrics"
 )
 
 // Httpserver .

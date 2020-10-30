@@ -1,8 +1,9 @@
 package handlers
 
 import (
-	"go-api-template/internal/httpserver/response"
 	"net/http"
+
+	"github.com/adefirmanf/go-api-template/internal/httpserver/response"
 )
 
 // EchoMessage .

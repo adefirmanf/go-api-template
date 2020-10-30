@@ -1,4 +1,4 @@
-module go-api-template
+module github.com/adefirmanf/go-api-template
 
 go 1.14
 

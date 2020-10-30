@@ -1,8 +1,9 @@
 package app
 
 import (
-	"go-api-template/pkg/metrics"
-	"go-api-template/pkg/metrics/prometheus"
+	"github.com/adefirmanf/go-api-template/pkg/metrics/prometheus"
+
+	"github.com/adefirmanf/go-api-template/pkg/metrics"
 
 	stdprometheus "github.com/prometheus/client_golang/prometheus"
 )

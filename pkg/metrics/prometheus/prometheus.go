@@ -5,7 +5,7 @@
 package prometheus
 
 import (
-	"go-api-template/pkg/metrics"
+	"github.com/adefirmanf/go-api-template/pkg/metrics"
 
 	"github.com/prometheus/client_golang/prometheus"
 )

@@ -1,9 +1,10 @@
 package instruments
 
 import (
-	"go-api-template/pkg/metrics"
 	"net/http"
 	"time"
+
+	"github.com/adefirmanf/go-api-template/pkg/metrics"
 )
 
 // Metrics .

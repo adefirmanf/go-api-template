@@ -1,10 +1,11 @@
 package httpserver
 
 import (
-	"go-api-template/internal/httpserver/handlers"
-	"go-api-template/internal/httpserver/instruments"
-	"go-api-template/pkg/metrics"
 	"net/http"
+
+	"github.com/adefirmanf/go-api-template/internal/httpserver/handlers"
+	"github.com/adefirmanf/go-api-template/internal/httpserver/instruments"
+	"github.com/adefirmanf/go-api-template/pkg/metrics"
 
 	"github.com/go-chi/chi"
 )

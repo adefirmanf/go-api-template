@@ -3,13 +3,14 @@ package main
 import (
 	"context"
 	"fmt"
-	"go-api-template/app"
-	"go-api-template/config"
-	"go-api-template/config/env"
-	"go-api-template/internal/httpserver"
-	"go-api-template/internal/metricsserver"
 	"os"
 	"os/signal"
+
+	"github.com/adefirmanf/go-api-template/app"
+	"github.com/adefirmanf/go-api-template/config"
+	"github.com/adefirmanf/go-api-template/config/env"
+	"github.com/adefirmanf/go-api-template/internal/httpserver"
+	"github.com/adefirmanf/go-api-template/internal/metricsserver"
 )
 
 func main() {
