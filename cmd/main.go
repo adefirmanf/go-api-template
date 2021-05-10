@@ -6,7 +6,6 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/adefirmanf/go-api-template/app"
 	"github.com/adefirmanf/go-api-template/config"
 	"github.com/adefirmanf/go-api-template/config/env"
 	"github.com/adefirmanf/go-api-template/internal/httpserver"
@@ -19,7 +18,7 @@ func main() {
 
 	cfg := config.Load()
 
-	app := app.New()
+	// app := app.New()
 	// Todo : Handling signal exit
 	ctx, cancel := context.WithCancel(context.Background())
 	quit := make(chan os.Signal, 1)
@@ -27,9 +26,7 @@ func main() {
 
 	go func(c context.Context) {
 		h := httpserver.Httpserver{
-			Metrics: httpserver.Metrics{
-				Histogram: app.Metrics.Histogram,
-			},
+			Metrics: httpserver.Metrics{},
 		}
 		httpAppInit := httpserver.NewHTTPServer(h)
 		fmt.Printf("Service http-app-listener started [:%v] \n", cfg.AppPort())
